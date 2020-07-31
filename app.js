@@ -15,7 +15,7 @@ app.use(cors());
 app.use('/information',require('./routes/informationR'));
 
 app.get("/", (req, res) =>
-    res.send("Welcome!")
+    res.send("Hellow I'm dhanushka dayawansha!")
 );
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
