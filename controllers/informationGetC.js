@@ -7,7 +7,7 @@ exports.dictionaryDataGet = async (req, res) => {
             if(result.length>0) {
                 res.status(200).json({
                     data: result,
-                    message: 'Student Get Success!',
+                    message: 'Information Get Success!',
                     statusCode: StatusCodes.Success
                 })
             }else {
@@ -20,7 +20,7 @@ exports.dictionaryDataGet = async (req, res) => {
         }).catch(e=>{
             res.status(200).json({
                 data: null,
-                message: 'Student Get Server Error',
+                message: 'Information Get Server Error',
                 statusCode: StatusCodes.ServerError
             });
         })
@@ -28,7 +28,7 @@ exports.dictionaryDataGet = async (req, res) => {
     } catch (e) {
         res.status(200).json({
             data: null,
-            message: 'Student Get DB Error',
+            message: 'Information Get DB Error',
             statusCode: StatusCodes.DBError
         });
     }
